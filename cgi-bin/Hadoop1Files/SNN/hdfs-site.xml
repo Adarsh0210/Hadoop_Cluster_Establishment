@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<!-- Put site-specific property overrides in this file. -->
+
+<configuration>
+
+<property>
+<name>dfs.http.address</name>
+<value>nn:50070</value>
+</property>
+
+<property>
+<name>dfs.secondary.http.address</name>
+<value>snn:50090</value>
+</property>
+
+<property>
+<name>fs.checkpoint.dir</name>
+<value>/data/current</value>
+</property>
+
+<property>
+<name>fs.checkpoint.edits.dir</name>
+<value>/data/edit</value>
+</property>
+
+<property>
+<name>fs.checkpoint.period</name>
+<value>360</value>
+</property>
+
+
+</configuration>

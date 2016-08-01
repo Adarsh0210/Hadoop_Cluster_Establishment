@@ -1,0 +1,277 @@
+<html>
+<style>
+
+a.amenu
+
+{
+
+border: 5px inset white;
+
+width: 220px;
+
+display: block;
+
+background: url('top.jpg');
+
+color: white;
+
+text-align: center;
+
+text-decoration: none;
+
+-moz-border-radius: 10px;
+
+border-radius: 10px 5px;
+
+box-shadow: 10px 10px 10px grey;
+
+}
+
+
+a.amenu:hover
+
+{
+
+color: grey;
+width: 225px;
+
+box-shadow: 10px 10px 10px black;
+
+}
+
+p
+
+{
+
+display: none;
+
+border: 2px solid green;
+
+}
+
+
+
+div.outer
+
+{
+position:absolute;
+left:-50px;
+//border: 2px solid blue;
+
+width: 95%;
+
+height: 100%;
+
+margin-left: 100px;
+//backgroud:url('myimage.png');
+
+}
+
+
+
+div.left
+
+{
+
+//border: 2px solid green;
+
+width: 250px;
+
+height: 400px;
+
+margin-top: 120px;
+
+position:absolute;
+left:0px;
+
+padding-left: 5px;
+
+//background: aqua;
+
+}
+
+
+div.right
+
+{
+
+position:absolute;
+right:35px;
+//border: 5px green;
+
+height: 400px;
+
+width: 650px;
+
+
+
+margin-top: 100px;
+
+background: url('myimage.png');
+
+background-size: 100%  100%;
+
+border-radius: 30px;
+
+box-shadow: 5px 5px 5px #4169E1;
+}
+
+
+iframe.myi
+
+{
+
+width:650px;
+
+height: 350px;
+
+border: 0px;
+
+}
+
+
+div.right-bot
+
+{
+
+//border: 2px solid red;
+position:absolute;
+top:350px;
+width:650px;
+
+height: 50px;
+
+border-radius: 0px 0px 30px 30px;
+
+background: black;
+color: #00FF00;
+
+font-weight: bold;
+
+text-align: center;
+
+opacity: 0.6;
+
+}
+
+
+body
+
+{
+
+background: url('b.jpg') repeat-x;
+
+
+}
+
+
+div.top
+
+{
+
+//border: 2px ridge white;
+
+position: absolute;
+
+top: 0px;
+
+left: 4px;
+
+width: 99%;
+
+height: 100px;
+
+//background: url('back.04.jpg');
+
+//border-radius: 0px 0px 10px 10px;
+
+
+opacity:1
+
+}
+
+
+
+
+div.logo
+{
+//border:1px solid black;
+position:absolute;
+top:0px;
+width:130px;
+height:98px;
+//background:url('logo.png');
+}
+img.edit
+{
+positio:absolute;
+top:0px;
+width:130px;
+height:98px;
+}
+</style>
+
+
+<body>
+
+<div class='outer'>
+
+
+<div class='left'>
+
+<!--target='myi'--add this in all link to view it in iframe-->
+
+<a class='amenu' href='www.ansible.com' target='myi'>Ansible</a>
+
+<a class='amenu' href='www.hive.apache.org' target='myi'>Apache Hive</a>
+
+<a class='amenu' href='https://pig.apache.org' target='myi'>Apache Pig</a>
+
+<a class='amenu' href='www.sqoop.apache.org' target='myi'>Apache sqoop</a>
+
+<a class='amenu' href='www.apache.org' target='myi'>Big Data</a>
+
+<a class='amenu' href='www.docker.com' target='myi'>Docker</a>
+
+<a class='amenu' href='www.hadoop.apache.org' target='myi'>Hadoop Version1</a>
+
+<a class='amenu' href='www.hadoop.apache.org' target='myi'>Hadoop Version2</a>
+
+<a class='amenu' href='www.redhat.com' target='myi'>RedHat</a>
+
+<a class='amenu' href='https://zookeeper.apache.org' target='myi'>Zookeeper</a>
+
+<a class='amenu' href='login.html' '>Establish Cluster</a>
+
+
+</div>
+
+
+<div class='right'>
+
+		
+<iframe class='myi' name='myi' scroll='auto'>
+</iframe>
+
+<div class='right-bot'><marquee direction="right">
+Welcome to Data Basket(smart solutions)</marquee>
+</div>
+	
+</div>
+
+
+</div>
+
+
+
+<div class='top'>
+
+<div class='logo'>
+<img class='edit' src="logo.png" />
+</div>
+
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+<style>
+
+body.out{
+background-image:url('b3.jpg');
+color:white;
+text-align:center;
+text-shadow:2px 5px 5px grey;
+font-size:19px;
+}
+
+input.submit{
+border-radius:5px 5px;
+background-color:white;
+font-size:18px;
+}
+</style>
+
+<html>
+
+<head>
+<title>MapReduceTask</title>
+</head>
+
+<body class='out'>
+
+<form enctype='multipart/form-data' action='http://192.168.43.4/cgi-bin/H2jobrun.py' method='post'>
+</br>
+<p>Please specify the source file <input type='text' name='fname' placeholder='Please enter the filename with complete path' /></p>
+</br> 
+<p>Browse your mapper program <input type='file' name='mapper' /></p>
+</br>
+<p>Browse your reducer program <input type='file' name='reducer' /></p>
+</br>
+Please specify the output folder
+<input type='text' name='output' placeholder='Please enter folder name with complete path' />
+</br> 
+</br>
+<input class='submit' type='submit' value='RunTheJob' />
+</form>
+
+</body>
+
+</html>
+

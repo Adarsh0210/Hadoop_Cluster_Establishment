@@ -1,0 +1,224 @@
+<html>
+<style>
+img#id2
+{
+position:absolute;
+left:430px;
+top:300px;
+width:152px;
+height:152px;
+//background:url('arc.png');
+transition:transform 2s, opacity 2s;
+}
+img#id3
+{
+position:absolute;
+top:300px;
+left:550px;
+width:152px;
+height:152px;
+opacity:0;
+transition:transform 2s, opacity 2s, left 2s;
+}
+img#id4
+{
+position:absolute;
+top:300px;
+right:550px;
+width:152px;
+height:152px;
+opacity:0;
+transition:transform 2s, opacity 2s, right 2s;
+}
+body.main
+{
+background:url("grill_resized.jpg");
+}
+img#id0
+{
+position:absolute;
+top:-40px;
+left:-52px;
+z-index:-1;
+opacity:0;
+transition:transform 2s, opacity 2s;
+}
+img#id01
+{
+position:absolute;
+top:150px;
+left:-52px;
+opacity:0;
+transition:transform 2s, opacity 2s;
+}
+img#id02
+{
+position:absolute;
+top:320px;
+left:-52px;
+opacity:0;
+transition:transform 2s, opacity 2s;
+}
+div#left
+{
+position:absolute;
+top:150px;
+left:200px;
+//border:2px solid red;
+width:10%;
+height:10%;
+text-align:center;
+opacity:0;
+transition:transform 2s, opacity 2s;
+ }
+a#edit1
+{
+position:absolute;
+top:190px;
+left:0px;
+opacity:0;
+transition:transform 2s, opacity 2s;
+}
+a#edit2
+{
+position:absolute;
+top:360px;
+left:0px;
+opacity:0;
+//text-align:center;
+transition:transform 2s, opacity 2s;
+}
+div#right
+{
+position:absolute;
+top:150px;
+right:200px;
+//border:2px solid red;
+width:14%;
+height:10%;
+text-align:center;
+opacity:0;
+transition:transform 2s, opacity 2s;
+//transition:transform 2s, opacity 2s;
+}
+img#id03
+{
+position:absolute;
+top:-40px;
+right:-52px;
+z-index:-1;
+opacity:0;
+transition:transform 2s, opacity 2s;
+}
+img#id04
+{
+position:absolute;
+top:150px;
+right:-52px;
+opacity:0;
+transition:transform 2s, opacity 2s;
+}
+img#id05
+{
+position:absolute;
+top:320px;
+right:-52px;
+opacity:0;
+transition:transform 2s, opacity 2s;
+}
+a#edit3
+{
+position:absolute;
+top:190px;
+right:-15px;
+opacity:0;
+transition:transform 2s, opacity 2s;
+}
+a#edit4
+{
+position:absolute;
+top:360px;
+right:0px;
+opacity:0;
+transition:transform 2s, opacity 2s;
+}
+id#mainx
+{
+transition:transform 2s, opacity 2s;
+}
+</style>
+<script>
+function rotate(z)
+{
+//x=document.getElementById("id2");
+z.style.transform="rotate(720deg)";
+hide(z);
+}
+function hide(z)
+{
+z.style.opacity="0";
+x=document.getElementById("id3");
+y=document.getElementById("id4");
+x.style.opacity="1";
+y.style.opacity="1";
+x.style.transform="rotate(-720deg)";
+y.style.transform="rotate(720deg)";
+x.style.left="0px";
+y.style.right="0px";
+l=document.getElementById("left");
+m=document.getElementById("right");
+l.style.opacity="1";
+m.style.opacity="1";
+p1=document.getElementById("id0");
+ah1=document.getElementById("mainx");
+p2=document.getElementById("id01");
+p3=document.getElementById("id02");
+p4=document.getElementById("id03");
+p5=document.getElementById("id04");
+p6=document.getElementById("id05");
+p1.style.opacity="1"
+ah1.style.opacity="1"
+p2.style.opacity="1"
+p3.style.opacity="1"
+p4.style.opacity="1"
+p5.style.opacity="1"
+p6.style.opacity="1"
+//ah2=document.getElementById("id7");
+//ah2.style.opacity="1"
+//p=document.getElementById("edit1");
+q=document.getElementById("edit1");
+r=document.getElementById("edit2");
+//s=document.getElementById("edit");
+t=document.getElementById("edit3");
+u=document.getElementById("edit4");
+//p.style.opacity="1"
+q.style.opacity="1"
+r.style.opacity="1"
+//s.style.opacity="1"
+t.style.opacity="1"
+u.style.opacity="1"
+}
+</script>
+<body class="main">
+<pre> <h1 id="mainx"><font color="skyblue" size='16px'>HADOOP.HA			      HADOOP2</font></h1></pre>
+<div id="left"> 
+<img id="id0" src="BUT2.png" />
+<a id="id06" href="MANUALHADOOP1.html"><h2>MANUAL</h2></a>
+<img id="id01" src="BUT2.png" />
+<a id="edit1" href="AUTOHADOOP1.html"><h2>AUTOMATIC</h2></a>
+<img id="id02" src="BUT2.png" />
+<a id="edit2" href="ONDEMANDH1.html"><h2>ONDEMAND</h2></a>
+</div>
+<div id="right">
+<img id="id03" src="BUT2.png" />
+<a id="id07" href="MANUALHADOOP2.html"><h2>MANUAL</h2></a>
+<img id="id04" src="BUT2.png" />
+<a id="edit3" href="AUTOHADOOP2.html"><h2>AUTOMATIC</h2></a>
+<img id="id05" src="BUT2.png" />
+<a id="edit4" href="ONDEMANDH2.html"><h2>ONDEMAND</h2></a>
+</div>
+<img id='id2' src="arc.png" onclick='rotate(this)' />
+<img id='id3' src="arc.png" onclick='rotate(this)'/>
+<img id='id4' src="arc.png" onclick='rotate(this)' />
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE HTML>
+<style>
+body{
+background-image:url('bg5.jpg');
+color:white;
+text-align:center;
+text-shadow:2px 5px 5px green;
+font-size:19px;
+}
+input.submit{
+background-color:white;
+color:black;
+border-radius:5px 5px;
+}
+
+</style>
+
+<html>
+
+<head>
+<title>Upload your files</title>
+</head>
+
+<body class='body'>
+<form enctype='multipart/form-data' action='http://192.168.43.4/cgi-bin/H2upload.py' method='post'>
+</br>
+<pre class='p'>Browse your file:-  <input type='file' name='filename' /></pre>
+</br>
+</br>
+<p><input class='submit' type='submit' value='Upload File'/</p>
+</form>
+</body>
+</html>

@@ -1,0 +1,133 @@
+<html>
+<style>
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+li {
+    float: left;
+}
+
+a:link, a:visited {
+   // position:absolute;
+   
+    display: block;
+    width: 120px;
+    font-weight: bold;
+    color: black;
+    background-color: Teal;
+    text-align: center;
+    padding: 4px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+a:hover, a:active {
+    background-color: grey;
+}
+
+
+
+
+div.main
+{
+width:100%;
+height:100%;
+//border:2px solid black;
+position:absolute;
+top:-5px
+right:0px;
+left:0px;
+}
+img.edit
+{
+width:100%;
+height:100%;
+position:absolute;
+left:0px;
+top:-5px;
+opacity:0.9
+}
+a.button
+{
+cursor:pointer;
+//text-decoration:blink;
+position:absolute;
+top:335px;
+right:450px; 
+ /*Step 2: Basic Button Styles*/
+ display: block;
+ height: 100px;
+ width: 250px;
+ background: #34696f;
+ border: 2px solid rgba(33, 68, 72, 0.59);
+ 
+ /*Step 3: Text Styles*/
+ color: rgba(0, 0, 0, 0.55);
+ text-align: center;
+ font: bold 3.2em/100px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+ 
+ /*Step 4: Fancy CSS3 Styles*/
+ background: -webkit-linear-gradient(top, #34696f, #2f5f63);
+ background: -moz-linear-gradient(top, #34696f, #2f5f63);
+ background: -o-linear-gradient(top, #34696f, #2f5f63);
+ background: -ms-linear-gradient(top, #34696f, #2f5f63);
+ background: linear-gradient(top, #34696f, #2f5f63);
+ 
+ -webkit-border-radius: 50px;
+ -khtml-border-radius: 50px;
+ -moz-border-radius: 50px;
+ border-radius: 50px;
+ 
+ -webkit-box-shadow: 0 8px 0 #1b383b;
+ -moz-box-shadow: 0 8px 0 #1b383b;
+ box-shadow: 0 8px 0 #1b383b;
+ 
+ text-shadow: 0 2px 2px rgba(255, 255, 255, 0.2);
+  
+}
+ 
+/*Step 3: Link Styles*/
+a.button2 {
+ text-decoration: blink;
+}
+ 
+/*Step 5: Hover Styles*/
+a.button:hover {
+ background: #3d7a80;
+ background: -webkit-linear-gradient(top, #3d7a80, #2f5f63);
+ background: -moz-linear-gradient(top, #3d7a80, #2f5f63);
+ background: -o-linear-gradient(top, #3d7a80, #2f5f63);
+ background: -ms-linear-gradient(top, #3d7a80, #2f5f63);
+ background: linear-gradient(top, #3d7a80, #2f5f63);
+}
+div.right
+{
+//border:3px solid red;
+height:25px;
+width:40%;
+position:absolute;
+top:4px;
+right:-27px;
+}
+</style>
+<body>
+<div class='main'>
+<img class='edit' src='hadoop2s.jpg'/>
+</div>
+<div class='right'>
+<ul>
+  <li><a href="firstp.html">Home</a></li>
+ <!--<li><a href="news.html">News</a></li>-->
+  <li><a href="aboutus.html">Contact</a></li>
+  <li><a href="aboutus.html">About</a></li>
+</ul>
+</div>
+<a href="firstp.html" class="button">Roll On</a>
+</body>
+</html>
